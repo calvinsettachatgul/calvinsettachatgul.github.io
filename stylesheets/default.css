@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  font-size: 1em;
 }
 
 div {
@@ -10,9 +11,11 @@ div {
 }
 
 .header {
-  height: 5em;
+  height: 6em;
   width: 100%;
   top: 0%;
+  font-size: 2em;
+
 }
 
 .footer {
@@ -35,7 +38,14 @@ div {
 }
 
 .button {
-
+  padding-top: 10px;
+  margin: 10px 10px 10px 10px;
   height: 3em;
+
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
 
 }
