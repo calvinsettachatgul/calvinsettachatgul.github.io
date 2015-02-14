@@ -3,33 +3,33 @@ html, body {
 }
 
 div {
-
+  padding: 2px 2px 2px 2px;
   text-align:center;
   border: 1px solid black;
-  margin: 3px 3px 3px 3px;
+  margin: 2px 2px 2px 2px;
 }
 
 .header {
-
   height: 5em;
   width: 100%;
   top: 0%;
 }
 
 .footer {
-  height: 3em;
+  height: 2em;
   width: 100%;
-  bottom: 0%;
 }
 
 .main{
-  height: 60%;
+  height: 50%;
+  width: 63%;
+  float: left;
+
 }
 
 .section {
-  position: relative;
-  width: 40%;
-  height: 80%;
+  width: 33%;
+  height: 50%;
   bottom: 0px;
   float: right;
 }
