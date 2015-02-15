@@ -21,12 +21,33 @@
 
   <div class="blog_content">
     <p>There are 3 important ways to specify the position attributes value.  Each of the 3 values of relative, absolute, and fixed enable features of an html document to behave differently on an html document.</p>
+
+
     <p>Relative</p>
     <p>Relative positioning means it is repositioned relative to where it would have been if no positioning attributes were given to the element.  For example an html element positioned at coordinates x and y may not be given additional positioning attributes such as top, left, bottom or right.  The position will still remain at coordinates x and y on the page.  If positioning attributes are given to this feature such as top 10px.  The 10px would shift the item 10px down from the y coordinate, not from the top of the html page.  The shift occurs relative to the former x and y coordinates.</p>
+
+    <p>The syntax for relative positioning of a div is:</p>
+
+    <p>div { position: relative;}
+
+
     <p>Absolute</p>
 
+    <p>allows you to literally place any page element exactly where you want it.</p>
+
+    <p>The positioning will be relative to the direct parent element that is positioned absolute or relative.  If there is no parent that is absolute or relative, then the relative positioned will be positoned relative to the html document element.
+
+      <p>The syntax for absolute positioning of a div is:</p>
+
+    <p>div { position: absolute;}
+
     <p>Fixed</p>
-    <p></p>
+    <p>A fixed position element is positioned relative to the viewport, or the browser window itself. The viewport doesn't change when the window is scrolled, so a fixed positioned element will stay right where it is when the page is scrolled, creating an effect a bit like the old school "frames" days</p>
+
+    <p>The syntax for fixed positioning of a div is:</p>
+
+    <p>div { position: fixed;}
+
     <p></p>
     <p></p>
     <p></p>
