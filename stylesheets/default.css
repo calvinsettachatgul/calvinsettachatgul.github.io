@@ -24,28 +24,29 @@ div {
 }
 
 .main{
-  height: 50%;
+  height: 70%;
   width: 45%;
   float: left;
 
 }
 
-.section {
+.links {
+  position: relative;
   width: 33%;
-  height: 50%;
-  bottom: 0px;
+  height: 70%;
   float: right;
+  right: 2px;
 }
 
 .button {
-  padding-top: 10px;
-  margin: 10px 10px 10px 10px;
+  position: relative;
   height: 3em;
+  width: 95%;
+  display: block;
 
 }
 
-span {
-  display: inline-block;
-  vertical-align: middle;
+.span {
+  display: block;
 
 }
