@@ -25,9 +25,10 @@ div {
 }
 
 .main{
-  height: 70%;
+  height: 100%;
   width: 45%;
   float: left;
+  overflow: auto;
 
 }
 
@@ -36,6 +37,7 @@ div {
   width: 33%;
   height: 70%;
   float: right;
+  overflow: auto;
 }
 
 .button {

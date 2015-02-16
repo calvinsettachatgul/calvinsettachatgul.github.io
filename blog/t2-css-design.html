@@ -51,10 +51,14 @@
     <p>div { position: fixed;}
 
 
-      <img src="imgs/postion1.png" />
-      <img src="imgs/position2.png" />
-    <p></p>
-    <p></p>
+      <img height="100%" width="100%" src="../imgs/position1.png" />
+      <img height="100%" width="100%" src="../imgs/position2.png" />
+
+
+    <p>In the 2 below images there is a large div element that has a postion: fixed.  The CSS block is written below the class="fixed" designation.  As you can see the div element stays in place even though we scroll down shown in the image below.  The block stays in place in relation to the browser window.</p>
+    <p>The orange block is a relative div element with no additional positioning so that it appears below the text for the css code block.</p>
+    <p>The yellow block is a similar relative positioned element but has additional positioning so that it is floated right float: right of where it would have been otherwise and also moved left 10px with right: 10px</p>
+    <p>The green block is a block position: absolute.  It is positioned relative to the fixed red block but the positioning is not relative to the flow of the html document.  If the block were positioned relative it would have been positioned relative to a position just below the organge block.  In this case the additional positioning is absolute relative to the parent element.</p>
     <p></p>
   </div>
 
