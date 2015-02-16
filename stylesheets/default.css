@@ -35,7 +35,7 @@ div {
 .links {
   position: relative;
   width: 33%;
-  height: 70%;
+  height: 100%;
   float: right;
   overflow: auto;
 }
