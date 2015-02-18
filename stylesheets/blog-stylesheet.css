@@ -10,7 +10,7 @@ html {
 .blog_content {
   font-size: 1.5em;
   float: right;
-  width: 75%;
+  width: 50%;
   height: 100%;
   overflow: auto;
 }
