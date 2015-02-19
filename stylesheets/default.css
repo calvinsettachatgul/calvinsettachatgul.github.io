@@ -1,12 +1,11 @@
 html, body {
+
   height: 100%;
   font-size: 1.5em;
 }
 
 div {
-  padding: 20px 20px 20px 20px;
   border: 1px solid black;
-  margin: 2px 2px 2px 2px;
   display: block;
 }
 
@@ -14,19 +13,22 @@ div {
   height: 2em;
   width: 100%;
   font-size: 2em;
-  text-align: center;
+  text-align: left;
+  vertical-align: middle;
 
 
 }
 
 .footer {
+  position: fixed;
   height: 2em;
   width: 100%;
+  bottom: 0%;
 }
 
 .main{
-  height: 100%;
-  width: 45%;
+  height: 80%;
+  width: 60%;
   float: left;
   overflow: auto;
 
@@ -35,7 +37,7 @@ div {
 .links {
   position: relative;
   width: 33%;
-  height: 100%;
+  height: 80%;
   float: right;
   overflow: auto;
 }
@@ -44,12 +46,6 @@ div {
   position: relative;
   height: 3em;
   width: 95%;
-  display: block;
   text-align: center;
-
-}
-
-.span {
-  display: block;
 
 }
