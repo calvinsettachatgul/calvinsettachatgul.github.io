@@ -1,13 +1,9 @@
 
-html {
-  font-size: 1.5em;
-}
 
-.header {
-  background-color: white;
-}
 
 .blog_content {
+  position: relative;
+  top: 15%;
   font-size: 1.5em;
   float: right;
   width: 50%;
@@ -16,7 +12,8 @@ html {
 }
 
 .nav_bar {
-
+  position: relative;
+  top: 15%;
   float: left;
   width: 20%;
   height: 60%;
@@ -24,11 +21,4 @@ html {
 }
 
 .footer {
-  text-align: center;
-  font-style: Arial Sans-serif;
-  width: 100%;
-  height: 5em;
-  border: 1px solid black;
-  bottom: 0px;
-  clear: both;
 }

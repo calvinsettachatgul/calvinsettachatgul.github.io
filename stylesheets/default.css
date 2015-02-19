@@ -2,6 +2,11 @@ html, body {
 
   height: 100%;
   font-size: 1.5em;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 1.5em;
 }
 
 div {
@@ -10,25 +15,37 @@ div {
 }
 
 .header {
-  height: 2em;
+  position: fixed;
+  height: 3em;
   width: 100%;
   font-size: 2em;
   text-align: left;
-  vertical-align: middle;
+  top: 2px;
+  right: 1px;
+}
 
+h1 {
+  margin: 50px 5px 5px 20px;
+}
 
+h2 {
+  font-size: .75em;
+  margin: 30px 5px 5px 5px;
 }
 
 .footer {
   position: fixed;
-  height: 2em;
+  height: 3em;
   width: 100%;
   bottom: 0%;
+  right: 1px;
 }
 
 .main{
-  height: 80%;
-  width: 60%;
+  position: relative;
+  top: 15%;
+  height: 60%;
+  width: 40%;
   float: left;
   overflow: auto;
 
@@ -36,16 +53,23 @@ div {
 
 .links {
   position: relative;
-  width: 33%;
-  height: 80%;
+  top: 15%;
+  width: 40%;
+  height: 60%;
   float: right;
   overflow: auto;
+
 }
 
 .button {
+  float: right;
+  border-radius: .5em;
+  margin: 12px 12px 12px 12px;
   position: relative;
-  height: 3em;
-  width: 95%;
+  height: 50%;
+  width: 10%;
   text-align: center;
-
+  padding: 10px 10px 10px 10px;
+  bottom: 130%;
+  right: 10%;
 }
