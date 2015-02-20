@@ -2,23 +2,30 @@
 
 
 .blog_content {
+  padding: 10px 10px 10px 10px;
   position: relative;
   top: 15%;
-  font-size: 1.5em;
+  font-size: 1.25em;
   float: right;
   width: 50%;
   height: 60%;
   overflow: auto;
+  margin-right: 5%;
 }
 
 .nav_bar {
+  font-size: 1.75em;
+  padding: 10px 10px 10px 10px;
   position: relative;
   top: 15%;
   float: left;
   width: 20%;
   height: 60%;
+  margin-left: 5%;
 
 }
 
 .footer {
+  padding: 2px 2px 2px 2px;
+  font-size: 2em;
 }

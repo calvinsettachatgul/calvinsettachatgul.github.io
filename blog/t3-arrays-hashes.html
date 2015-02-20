@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calvin's Blog</title>
+  <meta charset="UTF-8">
+
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+
+</head>
+
+
+<body>
+
+    <div class="header">
+
+            <h1>Hashes and Arrays</h1>
+        <p>
+        <div class="button"><h2><a href="../construction.html">Projects</a></h2></div>
+        </p>
+
+        <p>
+        <div class="button"><h2><a href="../construction.html">About</a></h2></div>
+        </p>
+
+        <p>
+        <div class="button"><h2><a href="index.html">Blog</a></h2></div>
+        </p>
+    </div>
+
+  <div class="nav_bar">
+    <p>Calvin's Blog</p><a href="../index.html">Home</a>
+    <a href="index.html">Blog</a>
+    <a href="../construction.html">About</a>
+  </div>
+
+  <div class="blog_content">
+    <h2>What are Hashes and Arrays?</h2>
+
+    <p>Arrays are ordered list of objects.  In the Ruby programming language the Array Class provides built in methods for creating and editing a list of variables.  The array that is created from this class is a Ruby object that is itself a variable, and the list of items within the array is also a list of individually ordered variables.  This is much like just keeping a list shopping list when you go to the grocery, and numbering the list.  For example, let's create a shopping list to bake a cake:
+
+    1. Flour
+    2. Sugar
+    3. Butter
+    4  Eggs
+    5. Milk
+    6. Vanilla extract
+
+
+      This list can be turned into an array, except in many programming languages including Ruby, the list ordering starts at the index of 0. The number of the item is called the index, and the corresponding string object in this array is called the value in the array. </p>
+
+      <p>
+      To define an array variable in Ruby there are 2 formulas:
+
+      We can define the array explicitly:
+      new_array = [item1, item2]
+
+      We can also define the array using a constructor:
+
+      new_array = Array.new
+
+      naming each item as a string then, and defining the array explicitly we should write:
+
+      shopping_list = [
+            "Flour",
+            "Sugar",
+            "Butter",
+            "Eggs",
+            "Milk",
+            "Vanilla extract"
+      ]
+
+       naming each item as a string then, and defining the array with a constructor we should write:
+
+       shoping_list = Array.new
+
+       shopping_list[0] = "Flour"
+       shopping_list[1] = "Sugar"
+       shopping_list[2] = "Butter"
+       shopping_list[3] = "Eggs"
+       shopping_list[4] = "Milk"
+       shopping_list[5] = "Vanilla extract"
+
+       The benefit of defining an array is that we do not have to define many variables to name all the many items in the list.  We simply can call the list and index to pull up the grocery item.  For example if we want to know what the second item in list is we can call:
+
+       puts shopping_list[1]
+
+       the output will be the string
+
+       Sugar
+
+       The second important aspect to note about arrays is that the variables inside of it are ordered by the index.  The items are in an ordered structure.  The ordering is of course is by its index, and each item has a corresponding position in the list.  This is important when you want to know what position a certain variable is located in the list, and this also means we can call the item based on its position in the list.
+
+
+
+      </p>
+
+      <p>Hashes also store variables in an structure.  However, the hash is made of key and value pairs. The keys in a Hash are also any type of object we would like to use. Similar to the way we can use an  use integer number to call/identify variables in an Array,  we use keys to call variables in a Hash.
+
+        Hashes are more versatile in that we simply call a value by the name of the key object, but we don't have to know the particular index or order of the variables as we would have to know in an Array.  Hashes are good to use when we want to call by an object and are not worried about the order of the variables in a list.
+
+        Similar to an Array a hash maybe defined explicitly with:
+
+        new_hash = {
+          :key1 => value1,
+          :key2 => value2
+      }
+
+      or with a consructor
+
+      new_hash = Hash.new
+
+      new_hash[:key1] = value1
+      new_hash[:key2] = value2
+
+      </p>
+
+      <p>In the case of a Hash, the number of items and there positioning is not as important as being able to call a value by the key object.</p>
+
+      <p>A good example of this would be storing the price of an item and calling it by the grocery list item</p>
+
+      <p>
+        An example of this item would be
+        shopping_list_prices[:eggs] = 1.49
+      </p>
+
+      <p>We would not want to call the price by the position in the list.  We would want to call the price by the name of the item for example to get the price of eggs we would write:
+        shopping_list_prices[:eggs]
+
+        and ouput
+
+        1.49
+
+      </p>
+
+     <p>It wouldn't make sense to memorize the position or index of a price and then create an array value, and then store the associated index to the item in another database or data structure</p>
+
+     <p>
+      So to create a Hash with our shopping list prices we could write the following in the explicit method of defining a Hash:
+
+     </p>
+
+     <p>
+
+       shopping_list = {
+
+            :Flour => 3.00,
+            :Sugar => .99,
+            :Butter => 1.50,
+            :Eggs => 1.49,
+            :Milk => 2.25,
+            :Vanilla extract => 3.25
+
+     }
+
+     </p>
+
+
+
+
+
+    <h2>How To Choose Between Using Hash or Array</h2>
+
+    <p>To summarize we use an Array when the order of the data structure is important.  We use a Hash when we want to associate objects with other objects.
+  </div>
+
+<div class="footer">
+
+  Twitter    GitHub Facebook    LinkedIn
+
+</div>
+
+
+
+
+  </body>
+
+</html>
