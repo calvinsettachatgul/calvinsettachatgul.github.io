@@ -15,7 +15,7 @@ div {
 }
 
 .header {
-   background-color: #78C0A8;
+   background-color:;
    color: white;
   position: fixed;
   height: 3em;
@@ -37,7 +37,7 @@ h2 {
 
 .footer {
   color: white;
-   background-color: #5E412F;
+   background-color: ;
   font-size: 2em;
   position: fixed;
   height: 3025;
@@ -64,7 +64,7 @@ h2 {
 }
 
 .links {
-  background-color: #FCEBB6;
+  background-color:;
   font-size: 2em;
   position: relative;
   top: 15%;
