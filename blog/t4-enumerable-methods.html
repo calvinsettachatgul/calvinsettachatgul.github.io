@@ -39,10 +39,14 @@
   <div class="blog_content">
 
     <h2>Enumerable method map 02/25/15</h2>
+
+    <p>I'd like to tell you a little bit about map, a method that can apply to a list type structure that can be iterated over called an Enumerator.  From the Ruby docs we have this:</p>
+
+
     <p>
     From Ruby docs:  Enumerable</p>
     <p>
-    The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection. If Enumerable#max, #min, or #sort is used, the objects in the collection must also implement a meaningful <=> operator, as these methods rely on an ordering between members of the collection.</p>
+    The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection. If Enumerable#max, #min, or #sort is used, the objects in the collection must also implement a meaningful <=> operator, as these methods rely on an ordering between members of the collection such as arrays, ranges, hashes, sets.</p>
 
     <p>
 
@@ -56,7 +60,82 @@
 
     If no block is given, an Enumerator is returned instead.</p>
 
+    <p>I know the above to paragraphs can be a bit confusing because it is written in a very abstract way.</p>
 
+    <p>
+      What the above paragraph is saying an Enumerable methods include ways to move across a data structure.  These data structures or collections are part of the collection classification of objects including Hashes, Arrays, Lists.
+
+    </p>
+
+
+    <p>
+      The paragraph also makes reference to a method to compare the elements of the  data object.  This comparison method is called the combined comparison operator  is written as <=>.  The comparison operator allows the possibility of having other methods such as sort, min, max.  Sorting will sort each element by comparing them in someway and puting them in a specific order.  Min will return the minimum of the collection.  Max will return the maximum of the collection.
+    </p>
+
+    <p>
+      The map method is just a method that performs a specific action on each element of the collection.  The argument for map is a code block.  Inside the block you can specify what is done to each element of the collection and then a new collection is returned with the block applied to each element.
+    </p>
+
+    <h2>Examples of using Map</h2>
+
+
+    <p>Below we have an example of the use of map on a collection</p>
+
+    <h2>Arithmetic Operations on Integers</h2>
+
+<!--     numbers_array = *(1..10)
+
+    array_add_10 = numbers_array.map { |number| number + 10}
+
+    array_divide_10 = numbers_array.map { |number| number / 10.0}
+
+    array_exponent_10 = numbers_array.map { |number| number ** 10}
+
+    p array_add_10
+    p array_divide_10
+    p array_exponent_10 -->
+
+    <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #f8f8f2">numbers_array</span> <span style="color: #f92672">=</span> <span style="color: #f92672">*</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">.</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span>
+
+    <span style="color: #f8f8f2">array_add_10</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">numbers_array</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">map</span> <span style="color: #f8f8f2">{</span> <span style="color: #f92672">|</span><span style="color: #f8f8f2">number</span><span style="color: #f92672">|</span> <span style="color: #f8f8f2">number</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">}</span>
+
+    <span style="color: #f8f8f2">array_divide_10</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">numbers_array</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">map</span> <span style="color: #f8f8f2">{</span> <span style="color: #f92672">|</span><span style="color: #f8f8f2">number</span><span style="color: #f92672">|</span> <span style="color: #f8f8f2">number</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">.</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">}</span>
+
+    <span style="color: #f8f8f2">array_exponent_10</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">numbers_array</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">map</span> <span style="color: #f8f8f2">{</span> <span style="color: #f92672">|</span><span style="color: #f8f8f2">number</span><span style="color: #f92672">|</span> <span style="color: #f8f8f2">number</span> <span style="color: #f92672">**</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">}</span>
+
+    <span style="color: #f8f8f2">p</span> <span style="color: #f8f8f2">array_add_10</span>
+    <span style="color: #f8f8f2">p</span> <span style="color: #f8f8f2">array_divide_10</span>
+    <span style="color: #f8f8f2">p</span> <span style="color: #f8f8f2">array_exponent_10</span>
+</pre></div>
+
+
+    <p>The code snippet above shows the map fuction working on the block and below is the ouput</p>
+
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+[1, 1024, 59049, 1048576, 9765625, 60466176, 282475249, 1073741824, 3486784401, 10000000000]
+</pre></div>
+
+
+    <h2>class method on Objects</h2>
+
+    <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #f8f8f2">object_array</span> <span style="color: #f92672">=</span> <span style="color: #f92672">[</span><span style="color: #e6db74">&quot;apple&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1</span> <span style="color: #f8f8f2">,</span> <span style="color: #f92672">[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">3</span><span style="color: #f92672">]]</span>
+
+    <span style="color: #f8f8f2">object_class_array</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">object_array</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">map</span> <span style="color: #f8f8f2">{</span> <span style="color: #f92672">|</span><span style="color: #f8f8f2">element</span><span style="color: #f92672">|</span> <span style="color: #f8f8f2">element</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">class</span> <span style="color: #f8f8f2">}</span>
+
+    <span style="color: #f8f8f2">p</span> <span style="color: #f8f8f2">object_class_array</span>
+</pre></div>
+
+
+    <p>The code snippet above shows the map function working on the block and the ouptut is shown below:</p>
+
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">[String, Fixnum, Array]
+</pre></div>
+
+
+
+
+    <p>These are both great examples of how map can take a block and then change each element of the collection based methods that are specified inside the block</p>
   </div>
 
 <div class="footer">
