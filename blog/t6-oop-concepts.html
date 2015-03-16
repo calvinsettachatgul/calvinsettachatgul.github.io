@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calvin's Blog</title>
+  <meta charset="UTF-8">
+
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+
+</head>
+
+
+<body>
+
+    <div class="header">
+
+            <h1>Calvin Settachatgul</h1>
+        <p>
+        <div class="button"><h2><a href="../construction.html">Projects</a></h2></div>
+        </p>
+
+        <p>
+        <div class="button"><h2><a href="../construction.html">About</a></h2></div>
+        </p>
+
+        <p>
+        <div class="button"><h2><a href="index.html">Blog</a></h2></div>
+        </p>
+    </div>
+
+  <div class="nav_bar">
+    <p>Calvin's Blog</p><a href="../index.html">Home</a>
+    <a href="index.html">Blog</a>
+    <a href="../construction.html">About</a>
+  </div>
+
+  <div class="blog_content">
+    <h2>Blocs, Procs, Lambdas</h2>
+
+    <p></p>
+
+    <h2>Blocs</h2>
+    <p>Ruby blocks are passed to iterator methods such as each.  The method call is a syntax which accepts a block.  Methods such as each accepting this block is considered to be a syntax type of coding rather than the method getting passed in as an argument because the block is not an argument or an object.</p>
+    <h2>Procs</h2>
+    <p>What if we wanted to actually name a chunk of code as an object and assign it to a variable so we could pass it to a method as an argument?  Then we would use a ruby Proc.  An object instantiated from the class Proc is a ruby object which represents a chunk of code.  The object can be assigned to a variable and passed to a method as an argument.</p>
+    <h2>Lambdas</h2>
+    <p>Lambdas are a variation on the Proc object, but has several differences in characteristics. Lambdas are also chunks of code, but Lambdas require explicit creation and can't be called by &block, with the & sign.  lambdas return to the code block in which they are defined, therefore a return expression inside the method code in which they defined will also occur.  A Proc on the other hand will return a value for the code block in which the method is defined.  If the return value of the Proc takes place then other return expressions of the method will not execute.</p>
+    <p>The final differences is that lambdas will not execute and raise an argument if it does not get passed the correct number of arguments.  A proc will run with arguments defaulted to nil if not specified the correct number of arguments.</p>
+  </div>
+
+<div class="footer">
+  <img height="200px" width="200px" src="../imgs/facebook_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/github_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/google_plus_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/heroku_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/linkedin_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/twitter_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/gmail_logo.png" alt="logo"/>
+
+</div>
+
+
+
+
+  </body>
+
+</html>
