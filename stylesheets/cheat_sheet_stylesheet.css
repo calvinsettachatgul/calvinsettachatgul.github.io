@@ -1,0 +1,49 @@
+h1 {
+  font-family: sans-serif;
+  margin: 5%;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+
+main {
+  margin: 5%;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+
+section {
+  margin: 10%;
+  font-family: sans-serif;
+  width: 85%;
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+img {
+  margin: 10px;
+  height: 275px;
+}
+
+#right {
+  float: right;
+  width: 225px;
+}
+
+#left {
+  float: left;
+  width: 200px;
+}
