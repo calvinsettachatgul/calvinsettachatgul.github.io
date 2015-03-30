@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calvin's Blog</title>
+  <meta charset="UTF-8">
+
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+
+</head>
+
+
+<body>
+
+    <div class="header">
+
+            <h1>Calvin Settachatgul</h1>
+        <p>
+        <div class="button"><h2><a href="../construction.html">Projects</a></h2></div>
+        </p>
+
+        <p>
+        <div class="button"><h2><a href="../construction.html">About</a></h2></div>
+        </p>
+
+        <p>
+        <div class="button"><h2><a href="index.html">Blog</a></h2></div>
+        </p>
+    </div>
+
+  <div class="nav_bar">
+    <p>Calvin's Blog</p><a href="../index.html">Home</a>
+    <a href="index.html">Blog</a>
+    <a href="../construction.html">About</a>
+  </div>
+
+  <div class="blog_content">
+    <h2>Active Record</h2>
+
+    <p>ActiveRecord is an example of a way to provide Object Relational Mapping (ORM).  We can define an Object in a way that Ruby Understands and then communicate with a Database management system in SQL by way of the Ruby object interface.  </p>
+    <p>ActiveRecord makes it possible to map one row from a relational database to an object in Ruby.  This is an important part of what makes Ruby on Rails work.  Database interactions are handled by this database to object mapping within the Ruby on Rails application.  Active Record can enable a developer to create objects from a database from common Ruby syntax such as p = Post.last
+      and then call other methods that create attributes of the object such as p.title in p.title = " A new title" and then communicate with a database to save the object with p.save </p>
+    <h2>CRUD
+
+    </h2>
+    <p>For objects created from the database the CRUD functionality exists by default from Active Record.  These functions are the most basic database operations.<br><br>
+      Create appears as a method call in ruby syntax and can be invoked by simply by Post.new<br><br>
+      Read is the basic function of retrieving data from the database and can be invoked by a method that will return the data such as Post.first or Post.last<br><br>
+      Update is a function that will read, change and save after you modify the object in ruby you simply invoke the save feature or p.save.<br><br>
+      Delete  this enables us to elete an ActiveRecord object calling the ActiveRecord destroy method will destroy a database row using a DELETE query.<br></p>
+    <h2>Associations</h2>
+    <p>The associations between database tables are easily implemented in an ActiveRecord Model common associations are listed below:<br><br>
+      belongs_torelationship<br>
+      has-many<br>
+      has_one<br>
+      has_and_belongs_to_many<br>
+    </p>
+
+    <p>When these are declared at the top of the ruby class file it builds Associations between tables of the database.</p>
+    <h2>Validations</h2>
+    <p>ActiveRecord can validate data integrity in Models
+    </p>
+
+    <p>Validations are extremely important before data is saved to a database.  With validations in the web app we can make sure that the data is clean and correct.</p>
+
+    <p>Two of the most common validations are uniqueness and presence.  Other validations are formats of a string and type of data validation.</p>
+  </div>
+
+<div class="footer">
+  <img height="200px" width="200px" src="../imgs/facebook_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/github_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/google_plus_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/heroku_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/linkedin_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/twitter_logo.png" alt="logo"/>
+  <img height="200px" width="200px"  src="../imgs/gmail_logo.png" alt="logo"/>
+
+</div>
+
+
+
+
+  </body>
+
+</html>
