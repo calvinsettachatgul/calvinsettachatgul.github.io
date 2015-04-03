@@ -247,10 +247,39 @@ shopping_list_prices<span style='color:#d2cd86; '>[</span>:eggs<span style='colo
 
      <p>It wouldn't make sense to memorize the position or index of a price and then create an array value, and then store the associated index to the item in another database or data structure</p>
 
-     <p>
+      <p>
       So to create a Hash with our shopping list prices we could write the following in the explicit method of defining a Hash:
 
      </p>
+
+     <p>
+
+      <pre style='color:#d1d1d1;background:#000000;'>
+shopping_list <span style='color:#d2cd86; '>=</span> <span style='color:#b060b0; '>{</span>
+
+            :Flour <span style='color:#d2cd86; '>=</span>> <span style='color:#009f00; '>3.00</span>,
+            :Sugar <span style='color:#d2cd86; '>=</span>> <span style='color:#009f00; '>.99</span>,
+            :Butter <span style='color:#d2cd86; '>=</span>> <span style='color:#009f00; '>1.50</span>,
+            :Eggs <span style='color:#d2cd86; '>=</span>> <span style='color:#009f00; '>1.49</span>,
+            :Milk <span style='color:#d2cd86; '>=</span>> <span style='color:#009f00; '>2.25</span>,
+            :Vanilla extract <span style='color:#d2cd86; '>=</span>> <span style='color:#009f00; '>3.25</span>
+
+     <span style='color:#b060b0; '>}</span>
+</pre>
+
+
+
+     </p>
+
+
+
+
+
+    <h2>How To Choose Between Using Hash or Array</h2>
+
+    <p>To summarize we use an Array when the order of the data structure is important.  We use a Hash when we want to associate objects with other objects.</p>
+
+
 
 
 
