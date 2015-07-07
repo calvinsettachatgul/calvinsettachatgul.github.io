@@ -93,19 +93,23 @@
       </div>
 
       <p class="lead">This stuff is pretty amazing</p>
-      <h1>JavaScript 05/05/15</h1>
-      <p>JavaScript is an Object Oriented Programming Language that is different than Ruby.  Ruby is a class based language and JavaScript is a language comprised of objects which are equivalent to Ruby Hashes.  Functions are also first class objects in JavaScript.</p>
-      <h2>Inheritance Ruby vs JavaScript</h2>
-      <h2>JavaScript Prototype</h2>
-      <h2>JavaScript Object.create</h2>
-      <h2>Functions as First Class Objects</h2>
-      <h2>MultiThread</h2>
-      <h2>Methods</h2>
-      <p>String substring(startIndex, endIndex)</p>
-      <p>
-        console.log("string");
-
+      <h1>Using Pry Debugger 05/14/15</h1>
+      <h2>Setup</h2>
+      <p>include in your gem file</p>
+      <p>group :test, :development do
+      gem 'factory_girl'
+      gem 'faker'
+      gem 'pry'         
+      gem 'pry-byebug'  
+      end</p>
+      <p>other things you may want to include
+      gem 'json'          
+      gem 'awesome_print'  
       </p>
+      <h2>environment.rb</h2>
+      <p>require 'pry' if development? || test?</p>
+      <h2></h2>
+      <p></p>
       <p></p>
 <!-- content starts here -->
 <!-- ################################## -->
