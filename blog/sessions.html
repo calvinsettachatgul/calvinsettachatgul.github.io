@@ -93,23 +93,44 @@
       </div>
 
       <p class="lead">This stuff is pretty amazing</p>
+      <h1>Sinatra Sessions 05/03/15</h1>
+      <p>Sinatra sessions enable user login by the use of cookies</p>
+      <h2>Sessions Helper Methods</h2>
+      <p>Sessions helpers are specified in a file that may be named sessions_helper.rb and contains code similar to this:
+      helpers do
 
-      <h1>Sinatra DD/MM/YYYY</h1>
-      <h1>Routes</h1>
+      def login(user)
+        session[:user_id] = user.id
+      end
+
+      def logout!
+        session[:user_id] = nil
+      end
+
+      def logged_in?
+        !!current_user
+      end
+
+      def current_user
+        if session[:user_id]
+          @current_user ||= User.where(id: session[:user_id]).first
+        end
+      end
+    end
+    </p>
+    <p>Sessions Helper files are created inside of the app/helpers directory.</p>
+      <h2>User Authentication</h2>
+      <p>Using a gem such as bcrypt we can encrypt a user password and store an encrypted string that is associated with each user.</p>
+      <h2></h2>
       <p></p>
-      <h1>Restful</h1>
-      <p>Restful routes means that the routes support the basic features of a dabase.  These are well understood to be the basic CRUD functionalities of CREATE READ UPDATE and DESTROY.</p>
-      <h1>Views</h1>
-      <p>Views are rendered through .erb files, which stand for Embedded Ruby.  Here we can place <% %> and <%= %> tags.  The former tags will execute the ruby code placed inside the tag and the later tag will display the item returned in the tag.</p>
-
-      <!-- content-->
-      <!-- content-->
-      <!-- content-->
-      <!-- content-->
-      <!-- content-->
-      <!-- content-->
-      <!-- content -->
-
+<!-- content starts here -->
+<!-- ################################## -->
+<!-- ################################## -->
+<!-- ################################## -->
+<!-- ################################## -->
+<!-- ################################## -->
+<!-- ################################## -->
+<!-- ################################## -->
 
       <!-- FOOTER -->
       <footer>
