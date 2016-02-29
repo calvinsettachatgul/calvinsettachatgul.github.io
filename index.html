@@ -26,56 +26,19 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Calvin Settachatgul</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
 
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
       <!-- Indicators -->
-      <ol class="carousel-indicators">
+<!--       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -96,7 +59,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Cultural Blogs</h1>
-              <p>I've learned a lot about personal growth and working with others.  Foremost I've learned a lot about myself. What do I value the most?</p>                                                      
+              <p>I've learned a lot about personal growth and working with others.  Foremost I've learned a lot about myself. What do I value the most?</p>
               <p><a class="btn btn-lg btn-primary" href="blog/index.html" role="button">Cultural Blog</a></p>
             </div>
           </div>
@@ -120,15 +83,70 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.carousel -->
+    </div> -->
+    <!-- /.carousel -->
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
+
+     <!-- <hr class="featurette-divider"> -->
     <div class="container marketing">
 
+      <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Calvin Settachatgul</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- REMOVE DROPDOWN -->
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+      <a name="about"></a>
+      <div class="row featurette" id="title">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">About Me <span class="text-muted"> </span></h2>
+
+        </div>
+
+      </div>
+
+     <hr class="featurette-divider">
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
@@ -136,6 +154,7 @@
           <h2>Attending Dev Bootcamp</h2>
           <p>I've taken this new path to learn more about myself and what I am capable of.  I want to learn new technologies to create, and become a better person.  Dev Bootcamp is a 9 week immersion program that will make me a Web Developer. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-thumbnail" src="imgs/ruby_on_rails.jpeg" width="140" height="140">
@@ -154,7 +173,7 @@
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+<!--       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -164,37 +183,19 @@
         <div class="col-md-5">
           <img height="700" width="700" class="featurette-image img-responsive center-block" src="imgs/san_francisco_photo.jpg" alt="View of San Francisco">
         </div>
-      </div>
+      </div> -->
 
-      <hr class="featurette-divider">
 
-      <a name="contact"></a>
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Contact Me! <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">I'd love to hear about who you are and what your goals are.  Any feedback is appreciated as well!</p>
-          <p>
-                 <a href="https://www.facebook.com/csettachatgul"> <img height="80px" width="80px" src="imgs/facebook_logo.png" alt="facebook logo"/></a>
-                <a href="https://github.com/calvinsettachatgul"><img height="80px" width="80px"  src="imgs/github_logo.png" alt="github logo"/></a>
-                <a href="https://plus.google.com/u/0/103999096514768389080/posts"><img height="80px" width="80px"  src="imgs/google_plus_logo.png" alt="google plus logo"/></a>
-                <a href="https://calvinapp.herokuapp.com"><img height="80px" width="80px"  src="imgs/heroku_logo.png" alt="heroku logo"/></a>
-                <a href="https://www.linkedin.com/in/calvinsettachatgul/en"><img height="80px" width="80px"  src="imgs/linkedin_logo.png" alt="linkedin logo"/></a>
-                <a href="https://twitter.com/csettachatgul"><img height="80px" width="80px"  src="imgs/twitter_logo.png" alt="twitter logo"/></a>
-                <a href="mailto:calvin.settachatgul@gmail.com"><img height="80px" width="80px"  src="imgs/gmail_logo.png" alt="logo"/></a>
-          </p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="imgs/coffee_computer.jpg" alt="contact image">
-        </div>
-      </div>
+
+
 
       <hr class="featurette-divider">
 
       <a name="about"></a>
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">About Me <span class="text-muted"> Learning and Growing</span></h2>
-          <p class="lead"> Thanks for reading this.  After graduating from UC Berkeley with a Chemical Engineering degree, I've worked for several startup companies in Biotechnology, and Analytical Tools Devices.</p>
+          <h2 class="featurette-heading">About Me <span class="text-muted"> </span></h2>
+          <p class="lead">After graduating from UC Berkeley with a Chemical Engineering degree, I've worked for several startup companies in Biotechnology, and Analytical Tools Devices.  I'm still Learning and Growing.</p>
 
           <p>I've found that I love building tools to make life easier and even more enjoyable.  I also discovered that I am analysis driven.  The tools I made helped to analyze data quantitatively rather than qualitatively.</p>
           <p>In many ways the tools and problems I solved were an expression, almost an art.  It was also very practical and had needed functionality, allowing the company more efficiency to take further steps to solve other underlying problems with its measurement device.</p>
@@ -205,7 +206,8 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+<!-- REMOVE EXTRA FEAUTURE BLOCK -->
+<!--       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -215,11 +217,33 @@
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
-      </div>
+      </div> -->
+
 
 
       <hr class="featurette-divider">
 
+      <a name="contact"></a>
+      <div class="row featurette">
+        <!-- <div class="col-md-7 col-md-push-5"> -->
+          <h2 class="featurette-heading">Contact Me<span class="text-muted"></span></h2>
+          <p class="lead">I'd love to hear about who you are and what your goals are.  Any feedback is appreciated as well!</p>
+          <p>
+                 <a href="https://www.facebook.com/csettachatgul"> <img height="80px" width="80px" src="imgs/facebook_logo.png" alt="facebook logo"/></a>
+                <a href="https://github.com/calvinsettachatgul"><img height="80px" width="80px"  src="imgs/github_logo.png" alt="github logo"/></a>
+                <a href="https://plus.google.com/u/0/103999096514768389080/posts"><img height="80px" width="80px"  src="imgs/google_plus_logo.png" alt="google plus logo"/></a>
+                <a href="https://calvinapp.herokuapp.com"><img height="80px" width="80px"  src="imgs/heroku_logo.png" alt="heroku logo"/></a>
+                <a href="https://www.linkedin.com/in/calvinsettachatgul/en"><img height="80px" width="80px"  src="imgs/linkedin_logo.png" alt="linkedin logo"/></a>
+                <a href="https://twitter.com/csettachatgul"><img height="80px" width="80px"  src="imgs/twitter_logo.png" alt="twitter logo"/></a>
+                <a href="mailto:calvin.settachatgul@gmail.com"><img height="80px" width="80px"  src="imgs/gmail_logo.png" alt="logo"/></a>
+          </p>
+        <!-- </div> -->
+        <!-- <div class="col-md-5 col-md-pull-7"> -->
+          <!-- <img class="featurette-image img-responsive center-block" src="imgs/coffee_computer.jpg" alt="contact image"> -->
+        <!-- </div> -->
+      </div>
+
+      <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
 
 
