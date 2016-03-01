@@ -1,6 +1,14 @@
 #title {
     background-image: url("../imgs/san_francisco_photo.jpg");
-    height: 800px;
+    height: 600px;
+    background-size:cover;
+    /*overflow: hidden;*/
+
+}
+
+#title .img-responsive{
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 img {
@@ -14,3 +22,4 @@ img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
 }
+
