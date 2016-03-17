@@ -1,2 +1,2 @@
 # calvinsettachatgul.github.io
-My DBC Phase 0 github pages site!
+Calvin Settachatgul Portfolio Page
